@@ -9,6 +9,9 @@ body {
     background-color: #f0f0f0;
     color: #333;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -45,12 +48,18 @@ p {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #333;
     color: white;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
+    bottom: 0;
+}
+
+body::after {
+    content: "";
+    display: block;
+    height: 80px;
 }
 
 #quiz div {
