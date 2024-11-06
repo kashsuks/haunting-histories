@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haunting Histories: The Tale of Halloween</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Haunting Histories: The Tale of Halloween</h1>
+        <p>Discover the origins, the traditions, and why we celebrate Halloween today.</p>
+    </header>
+
+    <section id="history">
+        <h2>The History of Halloween</h2>
+        <p>Halloween has roots in the ancient Celtic festival of Samhain. People would light bonfires and wear costumes to ward off roaming spirits...</p>
+        <img id="pumpkin" src="pumpkin.png" alt="Pumpkin Image">
+    </section>
+
+    <section id="modern-day">
+        <h2>Why We Celebrate Halloween Today</h2>
+        <p>Today, Halloween is celebrated with trick-or-treating, costume parties, and spooky decor...</p>
+    </section>
+
+    <section id="costume-origins">
+        <h2>The Origin of Costumes</h2>
+        <p>The tradition of wearing costumes dates back to disguising oneself from spirits...</p>
+    </section>
+
+    <section id="my-costume">
+        <h2>My Halloween Costume</h2>
+        <button id="costume-button" onclick="revealCostume()">See My Costume!</button>
+        <p id="costume-reveal"></p>
+    </section>
+
+    <section id="quiz">
+        <h2>Halloween Quiz</h2>
+        <p>Test your Halloween knowledge!</p>
+        <div>
+            <p>1. What was Halloween originally called?</p>
+            <input type="text" id="q1">
+        </div>
+        <div>
+            <p>2. What do pumpkins represent during Halloween?</p>
+            <input type="text" id="q2">
+        </div>
+        <button onclick="checkQuiz()">Submit Quiz</button>
+        <p id="quiz-result"></p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
