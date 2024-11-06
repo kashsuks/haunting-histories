@@ -2,31 +2,63 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #1a1a1a;
     color: #f8f8f8;
+    line-height: 1.6;
     padding: 20px;
-    text-align: center;
-}
-
-header {
-    padding: 20px;
+    margin: 0;
 }
 
 h1, h2 {
-    color: orange;
+    color: #ffa500;
+    text-shadow: 2px 2px 5px black;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+header {
+    padding: 40px 0;
+    text-align: center;
+    background: url('background-texture.jpg') no-repeat center center/cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+.container {
+    background: rgba(255, 165, 0, 0.1);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 button {
     padding: 10px 20px;
     background-color: orange;
     border: none;
+    border-radius: 5px;
     color: white;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
     background-color: #ff6347;
     transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 #pumpkin {
@@ -52,6 +84,19 @@ button:hover {
 
 #quiz-result.wrong {
     color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #262626;
+    margin-top: 50px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    color: #f8f8f8;
+    font-size: 1.2em;
 }
 
 @keyframes floatGhost {

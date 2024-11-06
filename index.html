@@ -10,45 +10,62 @@
 
     <header>
         <h1>Haunting Histories: The Tale of Halloween</h1>
-        <p>Discover the origins, the traditions, and why we celebrate Halloween today.</p>
+        <p>Discover the origins, traditions, and why we celebrate Halloween today in spooky style!</p>
     </header>
 
     <section id="history">
-        <h2>The History of Halloween</h2>
-        <p>Halloween has roots in the ancient Celtic festival of Samhain. People would light bonfires and wear costumes to ward off roaming spirits...</p>
-        <img id="pumpkin" src="pumpkin.png" alt="Pumpkin Image">
+        <div class="container">
+            <h2>The Origins of Halloween</h2>
+            <p>Halloween’s origins date back over 2,000 years to the ancient Celtic festival of Samhain. The Celts, who lived in what is now Ireland, celebrated their new year on November 1st. On the night of October 31st, they believed the boundary between the living and the dead blurred, and ghosts of the dead returned to earth.</p>
+            <p>The festival involved bonfires, costumes, and sacrifices to deities. Over time, as the Romans conquered Celtic lands, they adopted and blended these traditions with their own festivals.</p>
+            <img id="pumpkin" src="pumpkin.png" alt="Pumpkin Image">
+        </div>
     </section>
 
     <section id="modern-day">
-        <h2>Why We Celebrate Halloween Today</h2>
-        <p>Today, Halloween is celebrated with trick-or-treating, costume parties, and spooky decor...</p>
+        <div class="container">
+            <h2>Halloween Today</h2>
+            <p>Today, Halloween is celebrated across many parts of the world, though it's most prominent in North America. It's a night of fun and fright with trick-or-treating, costume parties, haunted houses, and pumpkin carving. Modern celebrations are rooted in centuries of folklore, but now emphasize community and creativity.</p>
+            <p>People of all ages dress up as their favorite characters, both scary and fun. It's a time for spooky stories, indulging in candy, and celebrating the unknown.</p>
+        </div>
     </section>
 
     <section id="costume-origins">
-        <h2>The Origin of Costumes</h2>
-        <p>The tradition of wearing costumes dates back to disguising oneself from spirits...</p>
+        <div class="container">
+            <h2>The Origins of Costumes</h2>
+            <p>Costumes have been a part of Halloween for centuries, dating back to the belief that wearing disguises could help hide individuals from spirits. Today, costumes are worn not to ward off spirits, but for fun. Popular costumes have evolved over the years, from witches and ghosts to superheroes and fictional characters.</p>
+            <p>Costumes provide a chance for self-expression, letting people transform into someone—or something—else, even if just for one night.</p>
+        </div>
     </section>
 
     <section id="my-costume">
-        <h2>My Halloween Costume</h2>
-        <button id="costume-button" onclick="revealCostume()">See My Costume!</button>
-        <p id="costume-reveal"></p>
+        <div class="container">
+            <h2>My Halloween Costume</h2>
+            <button id="costume-button" onclick="revealCostume()">See My Costume!</button>
+            <p id="costume-reveal"></p>
+        </div>
     </section>
 
     <section id="quiz">
-        <h2>Halloween Quiz</h2>
-        <p>Test your Halloween knowledge!</p>
-        <div>
-            <p>1. What was Halloween originally called?</p>
-            <input type="text" id="q1">
+        <div class="container">
+            <h2>Halloween Quiz</h2>
+            <p>Test your Halloween knowledge with a fun quiz!</p>
+            <div>
+                <p>1. What was Halloween originally called?</p>
+                <input type="text" id="q1">
+            </div>
+            <div>
+                <p>2. What do pumpkins represent during Halloween?</p>
+                <input type="text" id="q2">
+            </div>
+            <button onclick="checkQuiz()">Submit Quiz</button>
+            <p id="quiz-result"></p>
         </div>
-        <div>
-            <p>2. What do pumpkins represent during Halloween?</p>
-            <input type="text" id="q2">
-        </div>
-        <button onclick="checkQuiz()">Submit Quiz</button>
-        <p id="quiz-result"></p>
     </section>
+
+    <footer>
+        <p>Made with 💀 by Kashyap Sukshavasi</p>
+    </footer>
 
     <script src="script.js"></script>
 
