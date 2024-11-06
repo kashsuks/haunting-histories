@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: orange;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+
+#pumpkin {
+    width: 150px;
+    transition: transform 0.5s;
+}
+
+#pumpkin:hover {
+    transform: rotate(15deg);
+}
+
+#costume-reveal {
+    margin-top: 15px;
+    font-size: 20px;
+    color: orange;
+    display: none;
+}
+
+#quiz-result {
+    font-size: 18px;
+    color: lightgreen;
+}
+
+#quiz-result.wrong {
+    color: red;
+}
+
+@keyframes floatGhost {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+#ghost {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 100px;
+    animation: floatGhost 4s infinite;
+}
